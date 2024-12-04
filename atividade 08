@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+double calcular_juros(double c, int m, double t) {
+    return c * m * t;
+}
+
+int main() {
+    double c, t, juros;
+    int m;
+
+    printf("Digite o valor do empréstimo (c) em Reais: ");
+    scanf("%lf", &c);
+    printf("Digite o número de meses (m): ");
+    scanf("%d", &m);
+    printf("Digite a taxa de juros mensal (t) em porcentagem: ");
+    scanf("%lf", &t);
+
+    t = t / 100.0;
+
+    juros = calcular_juros(c, m, t);
+
+    printf("Os juros cobrados no empréstimo serão: %.2lf Reais\n", juros);
+
+    return 0;
+}
