@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+double maior(double x, double y) {
+    return (x > y) ? x : y;
+}
+
+int main() {
+    double x, y, resultado;
+
+    printf("Digite o valor de x: ");
+    scanf("%lf", &x);
+    printf("Digite o valor de y: ");
+    scanf("%lf", &y);
+
+    resultado = maior(x, y);
+
+    printf("O maior número é: %.2lf\n", resultado);
+
+    return 0;
+}
