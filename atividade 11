@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void imprimir_divisores(int n) {
+    printf("Os divisores de %d são: ", n);
+
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {  // Se o número for divisor de n
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+}
+
+int main() {
+    int n;
+
+    printf("Digite um número positivo: ");
+    scanf("%d", &n);
+
+    if (n > 0) {
+        imprimir_divisores(n);
+    } else {
+        printf("Por favor, insira um número positivo.\n");
+    }
+
+    return 0;
+}
