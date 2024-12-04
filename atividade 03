@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void imprimir_numeros(int n) {
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+}
+
+int main() {
+    int n;
+
+    printf("Digite um número inteiro positivo: ");
+    scanf("%d", &n);
+
+    if (n > 0) {
+        // Chama a função para imprimir os números
+        imprimir_numeros(n);
+    } else {
+        printf("Por favor, insira um número maior que zero.\n");
+    }
+
+    return 0;
+}
