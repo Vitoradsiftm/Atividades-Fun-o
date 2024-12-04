@@ -1,1 +1,25 @@
+#include <stdio.h>
+
+int verificar_quadrado_ou_retangulo(int b, int h) {
+    return (b == h) ? 1 : 0;
+}
+
+int main() {
+    int b, h, resultado;
+
+    printf("Digite o valor da base (b): ");
+    scanf("%d", &b);
+    printf("Digite o valor da altura (h): ");
+    scanf("%d", &h);
+
+    resultado = verificar_quadrado_ou_retangulo(b, h);
+
+    if (resultado == 1) {
+        printf("A figura é um quadrado.\n");
+    } else {
+        printf("A figura é um retângulo.\n");
+    }
+
+    return 0;
+}
 
